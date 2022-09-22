@@ -39,7 +39,7 @@ public class QueryProcessorTest {
     }
      @Test
     public void knows14plus5() throws Exception {
-        assertThat(queryProcessor.process("what is 14 + 5"), containsString("9"));
+        assertThat(queryProcessor.process("what is 14 + 5"), containsString("19"));
     }
      @Test
     public void largestNumber() throws Exception {
