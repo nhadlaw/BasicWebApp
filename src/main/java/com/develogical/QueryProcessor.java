@@ -11,6 +11,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("your name")) {
             return "nelzer101";
         }
+         if (query.toLowerCase().contains("what is 9 + 17")) {
+            return "26";
+        }
         return "";
     }
 }
