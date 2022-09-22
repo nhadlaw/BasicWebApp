@@ -8,6 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class QueryProcessorTest {
 
+
     QueryProcessor queryProcessor = new QueryProcessor();
 
     @Test
@@ -29,17 +30,14 @@ public class QueryProcessorTest {
     public void knowsTeamName() throws Exception {
         assertThat(queryProcessor.process("what is your name"), containsString("nelzer101"));
     }
-    @Test
-    public void knows9plus17() throws Exception {
-        assertThat(queryProcessor.process("what is 9 + 17"), containsString("26"));
-    }
+    
      @Test
     public void knows3plus7() throws Exception {
-        assertThat(queryProcessor.process("what is 3 + 7"), containsString("10"));
+        assertThat(queryProcessor.process("what is 3 plus 7"), containsString("10"));
     }
      @Test
     public void knows14plus5() throws Exception {
-        assertThat(queryProcessor.process("what is 14 + 5"), containsString("19"));
+        assertThat(queryProcessor.process("what is 14 plus 5"), containsString("19"));
     }
      @Test
     public void largestNumber() throws Exception {
